@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="icon" type="image/png" sizes="16x16"  href="./favicons/favicon-16x16.png">
+    <link rel="stylesheet" href="./assets/style_index.css">
+    
+    <script type="module" src="./assets/index.js"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Jogo "Wario" jump</title>
+</head>
+<body>
+
+    <div class="game-board">
+        <form class="button">
+        <h1 class="escolhe_personagem"><b>Escolha o seu personagem:</b></h1>
+
+        <!--Escolher Personagem-->
+        <!-- ../jogo_js/index.html -->
+
+            <button  formaction="../jogo_js/inicio.html" class="mario">
+                <img src="./imgs/inicio/mario_inicio.gif" class="mario1" alt="mario" id= "mario">
+            </button>
+
+            <button type="submit" formaction="../jogo_js/inicio.html" class="luigi">
+                <img src="./imgs/inicio/luigi_inicio.gif" class="luigi1" alt="luigi">
+            </button>
+
+            <button type="submit" formaction="../jogo_js/inicio.html" class="yoshi">
+                <img src="./imgs/inicio/yoshi 5.gif" class="yoshi1" alt="yoshi">
+            </button>
+        </form>
+
+                        
+        <!-- Botão para acionar modal -->
+        <button type="button" class="botao_sobre" data-toggle="modal" data-target="#ExemploModalCentralizado">
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                    <button type="button" class="fecha_modal" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                    <div class="modal-body">
+                        <div class="titulo">
+                            <p><b>Jogo Super "<i>Wario</i>" World.</b></p>
+                        </div>
+
+                            <p>Jogo feito com base no curso do youtube: <a href="https://www.youtube.com/watch?v=r9buAwVBDhA&ab_channel=ManualdoDev">https://www.youtube.com/watch?v=r9buAwVBDhA&ab_channel=ManualdoDev</a> </p>
+
+                            <b>Alterações feitas a partir do projeto original:</b>
+                            <p>- Criação das telas de 'início' e o modal 'Sobre';</p>
+                            <p>- A tela de início permite escolher entre os três personagens: Luigi, Mario e Yoshi.</p>
+                            <p>- Contador e mostrador de pontos;</p>
+                            <p>- Aumento da velocidade do personagem de acordo com a pontuação;</p>
+                            <!--<p>- Tela de sucesso.</p>-->
+
+                        <div class="autor">
+                            <p>Autor: Marcel de Souza Bonfim</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chao">
+            <img src="./imgs/chao.jpg"  class="ground">
+        </div>
+        <img src="./imgs/clouds.png"  class="clouds">
+        <img src="./imgs/logo.png" class="logo">
+
+        <p id="pega_nome"></p>
+
+
+    </div>
+    
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</html>

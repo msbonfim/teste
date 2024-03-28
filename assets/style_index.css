@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 800px;
+    padding: 0;
+    margin: 0 auto !important;
+}
+
+.logo {
+  /* Centralizar na vertical e na horizontal */
+  position: absolute;
+  width: 400px;
+  top: 20%;
+  left: 50%;
+  margin: -20px 0 0 -200px; /* aplique margens superior e esquerda negativas para centralizar de verdade o elemento */
+}
+
+.botao_sobre {
+    background-image: url("../imgs/btn_info.png");
+    background-position: 50% 50%;
+    background-size: 100%;
+    width:48px;
+    height: 48px;
+    position: absolute;
+    bottom: 68px;
+    right:0;
+    border-radius: 10px;
+    fill: none;
+}
+
+/*https://www.pngwing.com/pt/free-png-twwhb*/
+
+.botao_sobre:hover {
+    border-color: rgb(126, 126, 126);
+
+ 
+}
+
+.botao_sobre:focus{
+    border-color: rgb(182, 182, 182);
+
+}
+
+.game-board {
+
+    width: 100%;
+    height: 568px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(blue, white);
+}
+
+.ground {
+    position: absolute;
+    bottom: 0px;
+}
+
+.escolhe_personagem {
+    position: absolute;
+    color: #fff;
+    /* Centralizar na vertical e na horizontal */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    margin-left: -25%;
+}
+
+.mario {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 0px;
+    /* Centralizar na vertical e na horizontal */
+    position: absolute;
+    left: 50%;
+    bottom: 67px;
+    margin-left: -50px; /* aplique margens superior e esquerda negativas para centralizar de verdade o elemento */
+    border: transparent;
+}
+
+.mario:hover {
+    border: solid 3px #da0e0e;
+    background-color: #fc9595;
+    border-radius: 20%;
+    bottom: 68px;
+}
+
+.luigi {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+
+    /* Centralizar na vertical e na horizontal */
+    position: absolute;
+    left: 25%;
+    bottom: 60px;
+    margin-left: -50px;
+    border: transparent;
+}
+
+.luigi:hover {
+    border: solid 3px #14289c;
+    background-color: #9dabff;
+    border-radius: 20%;
+    bottom: 68px;
+}
+.mario, .luigi, .yoshi {
+    background-color: transparent;
+}
+.yoshi {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 50px;
+    /* Centralizar na vertical e na horizontal */
+    position: absolute;
+    left: 75%;
+    margin-left: -50px;
+    border: transparent;
+}
+
+.yoshi:hover {
+    border: solid 3px #149c5c;
+    background-color: #97fdcd;
+    border-radius: 20%;
+    bottom: 68px;
+}
+
+.mario1, .luigi1, .yoshi1 {
+    width: 100%;
+    height: 100%;
+}
+
+.clouds {
+    position: absolute;
+    width: 450px;
+    animation: clouds-animation 20s infinite linear;
+}
+
+/* Modal */
+.modal-body {
+    background: #000;
+    color: #fff;
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+
+}
+
+.fecha_modal {
+    background: #000;
+    color: #fff;
+}
+
+.fecha_modal:hover {
+    background: #fff;
+    color:rgb(126, 126, 126);
+}
+
+/*=======*/
+@keyframes clouds-animation {
+    from {
+        right:-550px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+/*https://www.youtube.com/watch?v=r9buAwVBDhA&ab_channel=ManualdoDev */

@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    max-width: 1200px;
+    padding: 0;
+    margin: 0 auto !important;
+}
+
+#count {
+    position:absolute;
+    margin-left: 10px;
+    
+}
+
+
+.game-board {
+
+    width: 100%;
+    height: 500px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(blue, white);
+}
+
+.ground {
+    position: absolute;
+    width: 1200px;
+}
+
+.pipe {
+    position: absolute; /* uma img não interferena outra dentro do board */
+    bottom: 0;
+    width: 80px;
+    animation: pipe-animation 1.5s infinite linear;
+    /*infinite = o tubo passa infinitamente na tela e volta;
+    linear = a velocidade do tubo se torna constante;*/
+}
+.botao {
+    background-color: blueviolet;    
+
+}
+
+.botao ~hover {
+    background-color: aliceblue;
+}
+
+#pp {
+    position: absolute;
+    width: 150px;
+    bottom: 0px;
+    
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+.clouds {
+    position: absolute;
+    width: 550px;
+    margin-top: 10px;
+    animation: clouds-animation 20s infinite linear;
+}
+
+
+@keyframes pipe-animation {
+    /* Aqui o css anima a imagem da direita para a esquerda */
+    from {
+        right: -80px;
+    }
+    
+    to {
+        right: 100%;
+    }
+}
+
+
+@keyframes jump {
+    /* Aqui o css anima a imagem da cima e para baixo, fazendo o movimento do pulo */
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes clouds-animation {
+    from {
+        right:-550px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+/*https://www.youtube.com/watch?v=r9buAwVBDhA&ab_channel=ManualdoDev */
